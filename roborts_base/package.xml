@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>roborts_base</name>
+    <version>1.0.0</version>
+    <description>
+        The roborts_base package provides protocol sdk for RoboMaster AI Robot
+    </description>
+    <author>RoboMaster</author>
+    <maintainer email="robomaster@dji.com">RoboMaster</maintainer>
+    <license>GPL 3.0</license>
+    <url>https://github.com/RoboMaster/RoboRTS</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>roscpp</build_depend>
+    <build_depend>rospy</build_depend>
+    <build_depend>tf</build_depend>
+    <build_depend>roborts_msgs</build_depend>
+
+    <exec_depend>roscpp</exec_depend>
+    <exec_depend>rospy</exec_depend>
+    <exec_depend>tf</exec_depend>
+    <exec_depend>roborts_msgs</exec_depend>
+
+    <depend>libgoogle-glog-dev</depend>
+
+</package>

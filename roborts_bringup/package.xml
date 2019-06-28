@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>roborts_bringup</name>
+    <version>1.0.0</version>
+    <description>
+        The roborts_bringup package provides quick bringup for RoboMaster AI Robot
+    </description>
+    <author>RoboMaster</author>
+    <maintainer email="robomaster@dji.com">RoboMaster</maintainer>
+    <license>GPL 3.0 </license>
+    <url>https://github.com/RoboMaster/RoboRTS</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <exec_depend>roborts_base</exec_depend>
+    <exec_depend>roborts_common</exec_depend>
+    <exec_depend>roborts_localization</exec_depend>
+    <exec_depend>roborts_costmap</exec_depend>
+    <exec_depend>roborts_msgs</exec_depend>
+    <exec_depend>rviz</exec_depend>
+    <exec_depend>stage_ros</exec_depend>
+    <exec_depend>map_server</exec_depend>
+
+
+</package>

@@ -6,14 +6,12 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake_module)
 set(CMAKE_BUILD_TYPE Release)
 
 find_package(catkin REQUIRED COMPONENTS
-  roborts_base
-  roborts_common
-  roborts_localization
-  roborts_costmap
-  roborts_msgs
-  roborts_planning
-  )
+    roborts_base
+    roborts_common
+    roborts_localization
+    roborts_costmap
+    roborts_msgs
+    roborts_planning
+    )
 
 catkin_package()
-
-

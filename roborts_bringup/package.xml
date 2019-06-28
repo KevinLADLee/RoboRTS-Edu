@@ -12,14 +12,20 @@
 
     <buildtool_depend>catkin</buildtool_depend>
 
+    <build_depend>roborts_base</build_depend>
+    <build_depend>roborts_common</build_depend>
+    <build_depend>roborts_localization</build_depend>
+    <build_depend>roborts_costmap</build_depend>
+    <build_depend>roborts_msgs</build_depend>
+    <build_depend>roborts_planning</build_depend>
+
     <exec_depend>roborts_base</exec_depend>
     <exec_depend>roborts_common</exec_depend>
     <exec_depend>roborts_localization</exec_depend>
     <exec_depend>roborts_costmap</exec_depend>
     <exec_depend>roborts_msgs</exec_depend>
-    <exec_depend>rviz</exec_depend>
-    <exec_depend>stage_ros</exec_depend>
-    <exec_depend>map_server</exec_depend>
 
+    <export>
+    </export>
 
 </package>

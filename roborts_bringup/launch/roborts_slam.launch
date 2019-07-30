@@ -26,7 +26,7 @@
   <include file="$(find roborts_slam)/launch/roborts_slam_realworld_rplidar.launch" />
 
   <!-- Run goal decision node -->
-  <node pkg="roborts_decision" type="behavior_test_node" name="behavior_test_node"respawn="false" />
+  <node pkg="roborts_decision" type="behavior_test_node" name="behavior_test_node" respawn="false" />
 
   
 

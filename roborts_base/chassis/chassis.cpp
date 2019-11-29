@@ -98,6 +98,8 @@ void Chassis::ChassisInfoCallback(const std::shared_ptr<roborts_sdk::cmd_chassis
   odom_.pose.pose.position.x = chassis_info->position_x_mm/1000.;
   odom_.pose.pose.position.y = chassis_info->position_y_mm/1000.;
   odom_.pose.pose.position.z = 0.0;
+  
+  double yaw = chassis_info->gyro_angle / 1800.0 * M_PI; 
   geometry_msgs::Quaternion q = tf::createQuaternionMsgFromYaw(chassis_info->gyro_angle / 1800.0 * M_PI);
   odom_.pose.pose.orientation = q;
   odom_.twist.twist.linear.x = chassis_info->v_x_mm / 1000.0;

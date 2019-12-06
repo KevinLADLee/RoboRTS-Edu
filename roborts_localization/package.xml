@@ -27,5 +27,6 @@
     <exec_depend>message_filters</exec_depend>
 
     <depend>libgoogle-glog-dev</depend>
+    <depend>map_server</depend>
 
 </package>

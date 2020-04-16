@@ -30,5 +30,6 @@
     <depend>pcl_ros</depend>
     <depend>pcl_conversions</depend>
     <depend>libg2o</depend>
+    <depend>interactive_markers</depend>
 
 </package>

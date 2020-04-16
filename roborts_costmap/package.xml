@@ -16,11 +16,13 @@
     <build_depend>roscpp</build_depend>
     <build_depend>rospy</build_depend>
     <build_depend>roborts_common</build_depend>
+    <build_depend>laser_geometry</build_depend>
 
     <exec_depend>actionlib</exec_depend>
     <exec_depend>roscpp</exec_depend>
     <exec_depend>rospy</exec_depend>
     <exec_depend>roborts_common</exec_depend>
+    <exec_depend>laser_geometry</exec_depend>
 
     <export>
     </export>

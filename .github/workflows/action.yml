@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -27,13 +27,16 @@ jobs:
 
     - name: Test rosdep
       run: |
-        cd $GITHUB_WORKSPACE
         mkdir -p $GITHUB_WORKSPACE/src
-        mv $GITHUB_WORKSPACE/RoboRTS-Edu $GITHUB_WORKSPACE/src
+        mv $GITHUB_WORKSPACE/roborts_* $GITHUB_WORKSPACE/src
+        cd $GITHUB_WORKSPACE
+        rosdep update
         rosdep install -y --from-paths src --ignore-src --rosdistro melodic
         
     - name: Build
       run: |
         cd $GITHUB_WORKSPACE
+        ls $GITHUB_WORKSPACE/src
+        source /opt/ros/melodic/setup.bash
         catkin_make  
         

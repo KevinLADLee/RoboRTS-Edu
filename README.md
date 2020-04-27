@@ -1,4 +1,7 @@
 # RoboRTS-Edu
+
+![MelodicBuildCI](https://github.com/Artinx-Robotics/RoboRTS-Edu/workflows/MelodicBuildCI/badge.svg)
+
 This project is an education version of [RoboRTS](https://github.com/RoboMaster/RoboRTS) with only navigation-related modules.
 
 ## Build and Run

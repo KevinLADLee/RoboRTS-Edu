@@ -8,8 +8,10 @@ This project is an education version of [RoboRTS](https://github.com/RoboMaster/
 
 ```bash
 mkdir -p roborts_edu_ws/src
-cd roborts_edu_ws/src
-git clone https://github.com/SUSTech-Robotics/RoboRTS-Edu.git
+cd roborts_edu_ws
+wget -c https://raw.githubusercontent.com/Artinx-Robotics/Common/master/roborts-melodic-slam-rplidar.rosinstall
+wstool init src roborts-melodic-slam-rplidar.rosinstall
+wstool update -t src
 cd ..
 
 sudo rosdep init
